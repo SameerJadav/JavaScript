@@ -1,16 +1,20 @@
 let counter = 0;
 
+function sec() {
+  document.querySelector("h1").innerHTML = counter;
+}
+
 function countInc() {
   counter++;
-  document.querySelector("h1").innerHTML = counter;
+  sec();
 }
 
 function countDec() {
   counter--;
-  document.querySelector("h1").innerHTML = counter;
+  sec();
 }
 
 function reset() {
   counter = 0;
-  document.querySelector("h1").innerHTML = counter;
+  sec();
 }
