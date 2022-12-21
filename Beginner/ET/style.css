@@ -1,0 +1,118 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  text-align: center;
+  margin: 0 5%;
+  max-width: 100vw;
+  background-color: #0d0d0d;
+  color: #fff;
+}
+
+h1 {
+  margin: 30px 0;
+  font-size: 3rem;
+}
+
+h2 {
+  margin: 15px 0;
+  font-size: 2rem;
+  color: #f23005;
+}
+
+form,
+.name,
+.date,
+.amount {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.label,
+.input {
+  font-size: 1.5rem;
+  margin-top: 10px;
+}
+
+.label {
+  color: #e1c6ff;
+}
+
+.input {
+  width: 90vw;
+  border-radius: 20px;
+  border: none;
+  outline: none;
+  background-color: #ffd6d6;
+  padding: 10px;
+}
+
+#submit {
+  margin: 15px 0;
+  padding: 10px;
+  font-size: 1.25rem;
+  background-color: #f24e29;
+  cursor: pointer;
+  border-radius: 25px;
+  outline: none;
+  border: non;
+}
+
+#submit:hover {
+  background-color: #f23005;
+}
+
+table,
+td,
+th {
+  border: 1px solid;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th {
+  background-color: #444144;
+}
+
+td {
+  background-color: #858282;
+}
+
+@media (min-width: 1000px) {
+  .name,
+  .date,
+  .amount {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  .name {
+    width: 100%;
+  }
+
+  .date > .input,
+  .amount > .input {
+    width: 35vw;
+  }
+
+  .input {
+    margin: 10px;
+  }
+
+  .flex-bottom {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}

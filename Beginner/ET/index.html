@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <main>
+      <h1>Expense Tracker</h1>
+      <h2>Add new item</h2>
+      <form>
+        <div class="name">
+          <label for="name" class="label">Name:</label>
+          <input
+            type="text"
+            name="name"
+            class="input"
+            id="name"
+            placeholder="Where was the expense made?"
+            required
+          />
+        </div>
+        <div class="flex-bottom">
+          <div class="date">
+            <label for="date" class="label">Date:</label>
+            <input type="date" name="date" class="input" id="date" required />
+          </div>
+          <div class="amount">
+            <label for="amount" class="label">Amount:</label>
+            <input
+              type="number"
+              name="amount"
+              id="amount"
+              class="input"
+              required
+            />
+          </div>
+        </div>
+        <input type="submit" value="Add expense" id="submit" />
+      </form>
+      <table id="expense-table">
+        <tr>
+          <th>Name</th>
+          <th>Date</th>
+          <th>Amount</th>
+        </tr>
+      </table>
+    </main>
+    <script src="app.js"></script>
+  </body>
+</html>
